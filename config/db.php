@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "pethub_db"; // මෙතැන නම නිවැරදිදැයි බලන්න
+$dbname = "pethub_db"; 
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 

@@ -2,7 +2,6 @@
 session_start();
 require_once 'config/db.php';
 
-// Add to Cart Logic
 if (isset($_POST['add_to_cart'])) {
     $product_id = intval($_POST['product_id']);
     $quantity = intval($_POST['quantity']);
@@ -19,7 +18,7 @@ if (isset($_POST['add_to_cart'])) {
     $msg = "Product added to cart!";
 }
 
-// Fetch Products
+
 $products_result = $conn->query("SELECT * FROM products");
 ?>
 

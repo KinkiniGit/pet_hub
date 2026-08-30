@@ -4,7 +4,7 @@ require_once 'config/db.php';
 
 $user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : 1; 
 
-// Database එකෙන් Bookings දත්ත ලබාගැනීම
+
 $query = "SELECT b.booking_id, b.phone, s.service_name, s.price, b.pet_type, b.booking_date, b.booking_time, b.status 
           FROM bookings b 
           INNER JOIN services s ON b.service_id = s.service_id 

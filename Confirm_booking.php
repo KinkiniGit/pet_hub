@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_booking'])) {
     $notes            = $_POST['notes'];
     $user_phone       = $_POST['phone'];
 
-    // Database Insert Query
+    
     $query = "INSERT INTO bookings (service, pet_breed, appointment_date, time_slot, notes, phone) VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($query);
     $stmt->bind_param("ssssss", $service, $pet_breed, $appointment_date, $time_slot, $notes, $user_phone);
@@ -22,7 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirm_booking'])) {
 
         $message = "Pet Hub Care: Your booking for $service on $appointment_date at $time_slot has been confirmed. Thank you!";
 
-        // URL එක නිවැරදිව සකස් කිරීම
         $url = "https://app.notify.lk/api/v1/send?user_id=" . $user_id . "&api_key=" . $api_key . "&sender_id=" . $sender_id . "&to=" . $user_phone . "&message=" . urlencode($message);
 
         // cURL SMS API call

@@ -2,7 +2,7 @@
 session_start();
 require_once 'config/db.php';
 
-// Services ලබාගැනීම
+
 $services_query = "SELECT * FROM services";
 $services_result = $conn->query($services_query);
 ?>
