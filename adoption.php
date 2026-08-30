@@ -2,17 +2,16 @@
 session_start();
 require_once 'config/db.php';
 
-// Adopt Request එක Form එකෙන් Submit කළ විට
+
 $msg = "";
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adopt_request'])) {
     $pet_name = $_POST['pet_name'];
     $user_phone = $_POST['phone'];
     
-    // මෙතනදී Admin ට දැනුම්දීමක් හෝ DB එකට Request එකක් දාන්න පුළුවන්
+    
     $msg = "Thank you! Your adoption request for $pet_name has been submitted. We will contact you via $user_phone soon.";
 }
 
-// Database එකෙන් 'Available' සතුන් ලබාගැනීම
 $query = "SELECT * FROM pets_for_adoption WHERE status = 'Available' ORDER BY pet_id DESC";
 $result = $conn->query($query);
 ?>
