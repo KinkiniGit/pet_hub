@@ -29,6 +29,31 @@ git clone https://github.com/KinkiniGit/pet_hub.git
 
 Follow these steps to run the project on your local environment (XAMPP / WAMP / MAMP):
 
+## 🗄️ Database Setup Instructions
+Follow these simple steps to set up the MySQL database using phpMyAdmin:
+
+1.Create Database
+
+- Open phpMyAdmin in your browser.
+
+- Click New from the left sidebar menu.
+
+- Enter your database name (e.g., pet_care_db).
+
+- Click Create.
+
+2.Import Schema File
+
+- Select your newly created database from the left menu.
+
+- Click on the Import tab located at the top navigation bar.
+
+- Click Choose File and select your .sql schema file from your local machine.
+
+- Scroll down and click Import (or Go) at the bottom right.
+
 ### 1. Clone the Repository
 ```bash
+
+
 git clone [https://github.com/KinkiniGit/pet_hub.git](https://github.com/KinkiniGit/pet_hub.git)
