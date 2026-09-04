@@ -9,7 +9,7 @@ require_once 'config/db.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Hub - Your Complete Pet Care Partner</title>
     
-    <!-- Bootstrap 5 CSS -->
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -28,7 +28,7 @@ require_once 'config/db.php';
             color: #333;
         }
 
-        /* Navigation Bar */
+       
         .navbar {
             background: #2c3e50;
             padding: 15px 5%;
@@ -48,7 +48,7 @@ require_once 'config/db.php';
             color: var(--primary-color) !important;
         }
 
-        /* Hero Section */
+        
         .hero {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1450778869186-3997d5a518da?w=1200') center/cover no-repeat;
             min-height: 60vh;
@@ -97,7 +97,7 @@ require_once 'config/db.php';
             color: white;
         }
 
-        /* Services Grid Cards */
+        
         .service-card {
             background: white;
             border: none;
@@ -113,7 +113,7 @@ require_once 'config/db.php';
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         }
 
-        /* Stats Bar Section */
+        
         .stats-section {
             background-color: var(--dark-blue);
             color: white;
@@ -131,7 +131,7 @@ require_once 'config/db.php';
             margin: 0;
         }
 
-        /* Featured Products Section */
+       
         .product-card {
             background: white;
             border: 1px solid #edf2f7;
@@ -161,7 +161,7 @@ require_once 'config/db.php';
             margin-bottom: 15px;
         }
 
-        /* Testimonials Section */
+        
         .testimonial-card {
             background: white;
             border-radius: 12px;
@@ -210,7 +210,7 @@ require_once 'config/db.php';
             font-size: 0.75rem;
         }
 
-        /* FAQ Section */
+      
         .accordion-button:not(.collapsed) {
             background-color: transparent;
             color: var(--dark-blue);
@@ -227,7 +227,7 @@ require_once 'config/db.php';
             overflow: hidden;
         }
 
-        /* Footer */
+        
         footer {
             background: #2c3e50;
             color: white;
@@ -240,7 +240,7 @@ require_once 'config/db.php';
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid px-lg-5">
             <a class="navbar-brand" href="index.php">🐾 Pet Hub Care</a>
@@ -259,7 +259,7 @@ require_once 'config/db.php';
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    
     <header class="hero">
         <h1>Everything Your Pet Needs, In One Place</h1>
         <p>Premium pet supplies, professional grooming & healthcare bookings, and loving pet adoption services.</p>
@@ -269,7 +269,7 @@ require_once 'config/db.php';
         </div>
     </header>
 
-    <!-- Main Services Section -->
+
     <section class="container my-5">
         <div class="row g-4">
             <div class="col-md-6 col-lg-3">
@@ -307,7 +307,7 @@ require_once 'config/db.php';
         </div>
     </section>
 
-    <!-- Stats Bar Section -->
+
     <section class="stats-section">
         <div class="container">
             <div class="row text-center gy-4">
@@ -331,7 +331,6 @@ require_once 'config/db.php';
         </div>
     </section>
 
-    <!-- Featured Products Section -->
     <section class="container my-5 py-3">
         <div class="text-center mb-4">
             <h2 class="fw-bold">Featured Products</h2>
@@ -373,7 +372,6 @@ require_once 'config/db.php';
         </div>
     </section>
 
-    <!-- Testimonials / What Pet Parents Say -->
     <section class="container my-5 py-3">
         <div class="text-center mb-4">
             <h2 class="fw-bold">What Pet Parents Say</h2>
@@ -428,7 +426,6 @@ require_once 'config/db.php';
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="container my-5 py-3" style="max-width: 800px;">
         <div class="text-center mb-4">
             <h2 class="fw-bold">Frequently Asked Questions</h2>
@@ -474,7 +471,6 @@ require_once 'config/db.php';
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p class="mb-0">&copy; <?= date('Y') ?> Pet Hub Care Center. All Rights Reserved.</p>
     </footer>
