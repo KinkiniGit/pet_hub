@@ -84,5 +84,9 @@ $result = $conn->query($query);
     <?php endif; ?>
 </div>
 
+<footer>
+        <p class="mb-0">&copy; <?= date('Y') ?> Pet Hub Care Center. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
